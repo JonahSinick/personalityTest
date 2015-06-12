@@ -59,6 +59,6 @@ df$badVoc = p$x[,1]
 p = prcomp(df[vcls[-c(6,9,12)]])
 df$voc = -p$x[,1]
 
+head(df)
 
-
-write.csv(df , "~/Desktop/personalityTest/cleaned.csv")
+write.csv(df , "~/Desktop/personalityTest/cleaned.csv", row.names = FALSE)
